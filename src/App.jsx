@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Spinner from "./components/Spinner";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 // Lazy-loaded pages
 const Home = lazy(() => import("./pages/Home"));
@@ -39,6 +40,8 @@ function App() {
       </Suspense>
 
       <Footer />
+            {/* Scroll düyməsi */}
+      <ScrollToTopButton/>
  </div>
   );
 }
