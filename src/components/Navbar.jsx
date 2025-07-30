@@ -22,7 +22,7 @@ function Navbar() {
   }, []);
 
   return (
-    <div className="flex fixed top-0 left-0 w-full z-50 shadow-md bg-[#000300] justify-between items-center  h-[85px] max-w-[1240px] mx-auto px-4 text-white ">
+    <div className="flex fixed top-0 left-0 w-full z-50 shadow-md bg-[#000300] justify-between items-center  h-[60px] max-w-[1240px] mx-auto px-4 text-white ">
       <div>
         <h1 className="w-full md:text-3xl sm:text-2xl text-xl text-[#00df9a] font-bold select-none">
           <Link to="/">BidNext</Link>
@@ -81,7 +81,7 @@ function Navbar() {
       >
         <h1 className="w-full text-3xl text-[#00df9a] font-bold m-4 select-none">
           <Link to="/" onClick={handleNavClose}>
-            BidNe
+            BidNext
           </Link>
         </h1>
 

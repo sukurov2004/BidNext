@@ -9,8 +9,8 @@ function Hero() {
   return (
     <div className="text-white select-none">
       {/* Basliq ve paraqraflar */}
-      <div className="max-w-[800px] mt-[40px] md:mt-[80px] sm:mt-[50px]  mx-auto text-center flex flex-col justify-center">
-        <p className="text-[rgb(0,223,154)] text-[18px] font-bold p-2 md:text-[30px] sm:text-[25px] ">
+      <div className="max-w-[800px] mt-[40px] md:mt-[80px] sm:mt-[100px]  mx-auto text-center flex flex-col justify-center">
+        <p className="text-[rgb(0,223,154)] text-[18px] font-bold p-2 md:text-[30px] sm:text-[25px] mt-[30px]">
           AZƏRBAYCANIN 1№ HƏRRAC PLATFORMASI
         </p>
         <h1 className=" text-3xl font-bold md:text-5xl sm:text-4xl md:py-6">
