@@ -81,7 +81,7 @@ function Navbar() {
       >
         <h1 className="w-full text-3xl text-[#00df9a] font-bold m-4 select-none">
           <Link to="/" onClick={handleNavClose}>
-            BidNext
+            BidNe
           </Link>
         </h1>
 
