@@ -26,7 +26,7 @@ function Footer() {
         <ul className="space-y-2 text-[16px] text-[#ffffffa4]">
           <li className="hover:text-[#00df9a] cursor-pointer">Haqqımızda</li>
           <li className="hover:text-[#00df9a] cursor-pointer">Bizimlə əlaqə</li>
-          <li className="hover:text-[#00df9a] cursor-pointer">Hərraclar</li>
+          <li className="hover:text-[#00df9a] cursor-pointer">Əməkdaşlıq</li>
         </ul>
       </div>
 

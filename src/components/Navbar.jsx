@@ -22,7 +22,7 @@ function Navbar() {
   }, []);
 
   return (
-    <div className="flex justify-between items-center h-[85px] max-w-[1240px] mx-auto px-4 text-white ">
+    <div className="flex fixed top-0 left-0 w-full z-50 shadow-md bg-[#000300] justify-between items-center  h-[85px] max-w-[1240px] mx-auto px-4 text-white ">
       <div>
         <h1 className="w-full md:text-3xl sm:text-2xl text-xl text-[#00df9a] font-bold select-none">
           <Link to="/">BidNext</Link>
@@ -32,17 +32,17 @@ function Navbar() {
       {/* Desktop Menu */}
       <ul className="hidden lg:flex  select-none text-[18px]">
        
-     <li className="cursor-pointer p-4 transition-transform duration-300 hover:-translate-y-1">
-  <Link to="/auctions">Hərraclar</Link>
+     <li className="cursor-pointer p-4 transition-transform duration-300 hover:-translate-y-0.5">
+  <Link to="/LiveAuctions">Canlı Hərraclar</Link>
 </li>
-        <li className="cursor-pointer p-4 transition-transform duration-300 hover:-translate-y-1 whitespace-nowrap">
+        <li className="cursor-pointer p-4 transition-transform duration-300 hover:-translate-y-0.5 whitespace-nowrap">
           <Link to="/CreateAuction">Hərrac Yarat</Link>
         </li>
 
-        <li className="cursor-pointer p-4 transition-transform duration-300 hover:-translate-y-1">
+        <li className="cursor-pointer p-4 transition-transform duration-300 hover:-translate-y-0.5">
           <Link to="/about">Haqqımızda</Link>
         </li>
-        <li className="cursor-pointer p-4 transition-transform duration-300 hover:-translate-y-1">
+        <li className="cursor-pointer p-4 transition-transform duration-300 hover:-translate-y-0.5">
           <Link to="/contact">Əlaqə</Link>
         </li>
       </ul>
@@ -87,8 +87,8 @@ function Navbar() {
 
         <ul className="uppercase p-4 font-bold">
           <li className="cursor-pointer p-4 border-b border-gray-600 select-none transition-transform duration-300 hover:translate-x-3">
-            <Link to="/auctions" onClick={handleNavClose}>
-              Hərraclar
+            <Link to="/LiveAuctions" onClick={handleNavClose}>
+              Canlı Hərraclar
             </Link>
           </li>
           <li className="cursor-pointer p-4 border-b border-gray-600 select-none transition-transform duration-300 hover:translate-x-3">

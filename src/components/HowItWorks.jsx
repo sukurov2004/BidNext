@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaUserPlus, FaPlusSquare, FaGavel, FaCheckCircle} from "react-icons/fa";
+import { Link } from 'react-router-dom';
 function HowItWorks() {
    const steps = [
     {
@@ -29,6 +30,7 @@ function HowItWorks() {
   ];
 
   return (
+    <Link to="/register">
   <div className="w-full bg-[#000300] text-white py-16 px-4">
       <div className="max-w-[1240px] mx-auto text-center">
         <h2 className="text-4xl font-bold text-[#00df9a] mb-10">Necə İşləyir?</h2>
@@ -46,7 +48,9 @@ function HowItWorks() {
         </div>
       </div>
     </div>
+     </Link>
   )
+ 
 }
 
 export default HowItWorks

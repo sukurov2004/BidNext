@@ -23,7 +23,7 @@ function Hero() {
             Hər növ əşyaların hərracı
           </p>
           <ReactTyped
-            strings={["Texnoloji", "Aksesuarlar", "Geyim", "İnşaat"]}
+            strings={["Texnoloji", "Aksesuarlar", "Geyim", "İnşaat","Ev Əşyaları"]}
             typeSpeed={120}
             backSpeed={140}
             loop
@@ -55,11 +55,11 @@ function Hero() {
           </Link>
 
           <Link
-            to="/LiveAuction"
+            to="/LiveAuctions"
             className="flex justify-center items-center gap-1 text-[14px] font-bold bg-black text-white border rounded-full w-[145px] h-[35px] cursor-pointer hover:text-black hover:bg-white transition-colors ease-in-out sm:text-[20px] sm:gap-2 sm:w-[180px] sm:h-[50px]"
           >
             <FaClock size={20} />
-            Canlı Hərrac
+            Canlı Hərraclar
           </Link>
         </div>
       </div>
