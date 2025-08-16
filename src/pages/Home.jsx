@@ -26,31 +26,38 @@ import CategoryCard from '../components/CategoryCard';
   ];
 
 function Home() {
-  return (
-    <div>
+return (
+  <div className="min-h-screen bg-[#000300] p-8">
+    <div className="max-w-7xl mx-auto">
+      {/* Hero bölməsi */}
+      <Hero />
 
-       <Hero/>
-       {/* Nece isleyir hissesi */}
-     <HowItWorks/>
-{/* Canli herraclar kartlari */}
-          <div className="min-h-screen bg-[#000300] p-8">
-      <h1 className="text-3xl font-bold text-[#00DF9A] mb-8">Canlı Hərraclar</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {auctions.map((item, index) => (
-          <AuctionCard
-            key={index}
-            title={item.title}
-            image={item.image}
-            price={item.price}
-            timeLeft={item.timeLeft}
-          />
-        ))}
+      {/* Necə işləyir hissəsi */}
+      <HowItWorks />
+
+      {/* Canlı hərraclar kartları */}
+      <div className="mt-12">
+        <h1 className="text-3xl font-bold text-[#00DF9A] mb-8">Canlı Hərraclar</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {auctions.map((item, index) => (
+            <AuctionCard
+              key={index}
+              title={item.title}
+              image={item.image}
+              price={item.price}
+              timeLeft={item.timeLeft}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Kateqoriya kartları */}
+      <div className="mt-12">
+        <CategoryCard />
       </div>
     </div>
-<CategoryCard/>
-    </div>
-    
-  )
+  </div>
+);
 }
 
 export default Home

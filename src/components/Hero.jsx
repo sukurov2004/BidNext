@@ -10,32 +10,29 @@ function Hero() {
     <div className="text-white select-none">
       {/* Basliq ve paraqraflar */}
       <div className="max-w-[800px] mt-[40px] md:mt-[80px] sm:mt-[100px]  mx-auto text-center flex flex-col justify-center">
-        <p className="text-[rgb(0,223,154)] text-[18px] font-bold p-2 md:text-[30px] sm:text-[25px] mt-[30px]">
-          AZƏRBAYCANIN 1№ HƏRRAC PLATFORMASI
-        </p>
-        <h1 className=" text-3xl font-bold md:text-5xl sm:text-4xl md:py-6">
+        
+        <h1 className=" text-xl font-bold md:text-5xl sm:text-3xl md:py-6 mt-[10px]">
           Ən sərfəli qiymətlərlə məhsulları hərracla əldə edin
         </h1>
 
         <div className="flex justify-center items-center">
-          <p className="text-[16px] md:text-4xl sm:text-3xl font-bold py-4">
-            {" "}
+          <p className="text-[14px] md:text-3xl sm:text-2xl font-bold py-4">
             Hər növ əşyaların hərracı
           </p>
           <ReactTyped
-            strings={["Texnoloji", "Aksesuarlar", "Geyim", "İnşaat","Ev Əşyaları"]}
+            strings={["Texnoloji","Geyim", "İnşaat","Kitab"]}
             typeSpeed={120}
             backSpeed={140}
             loop
             className=" text-[16px] md:text-4xl md:pl-4 sm:text-3xl  text-[rgb(0,223,154)] font-bold  pl-2 flex flex-wrap"
           />
         </div>
-        <p className="md:text-2xl text-xl font-bold text-gray-500">
+        {/* <p className="md:text-2xl text-xl font-bold text-gray-500">
           Məhsullar hərracda! Qiymətlərə sən qərar ver!
-        </p>
+        </p> */}
       </div>
       {/* Search input */}
-      <div className="flex items-center flex-col px-4 mt-[30px] gap-4">
+      <div className="flex items-center flex-col px-4 mt-[15px] gap-4">
         <div className="flex items-center lg:w-[60%] md:w-[70%] sm:w-[80%] w-[90%] bg-white border border-gray-300 rounded-full px-4 py-2 shadow-md">
           <FaSearch className=" text-gray-500 mr-2 text-xl " />
           <input
